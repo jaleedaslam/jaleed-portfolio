@@ -1,93 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jaleed Aslam | Data Engineer Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jaleed Aslam | Data Engineer & Power BI Developer</title>
 
-  <!-- Navbar -->
-  <nav id="navbar">
-    <div class="logo">Jaleed Aslam</div>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="darkModeToggle">🌙</button></li>
-    </ul>
-  </nav>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    />
+  </head>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hi there 👋, I'm <span>Jaleed Aslam</span></h1>
-      <p id="typing"></p>
-      <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" alt="Coding GIF">
-    </div>
-  </section>
+  <body>
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand__mark"></span>
+          <span class="brand__name">Jaleed Aslam</span>
+        </a>
 
-  <!-- About Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Motivated, team-oriented Data Engineer with experience in analytics, ETL pipelines, ML, and dashboard creation. MSc in Informatics (Data Science) with professional certifications. Passionate about turning data into actionable insights.</p>
-  </section>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <i class="ri-menu-3-line"></i>
+        </button>
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <h2>Professional Experience</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Data Engineer | LMU Munich</h3>
-        <span>Sep 2023 – Present</span>
-        <p>Working at MeDICLMU / DIFUTURE. Skills: ElasticSearch, Docker, Apache Superset, Power BI.</p>
+        <nav class="nav" id="nav">
+          <a class="nav__link active" href="#home">Home</a>
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#experience">Experience</a>
+          <a class="nav__link" href="#education">Education</a>
+          <a class="nav__link" href="#certifications">Certifications</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class="card">
-        <h3>Data Engineer/Scientist | Hamburg, Germany</h3>
-        <span>Sep 2022 – Sep 2023</span>
-        <p>Implemented ETL pipelines, dashboards (AWS QuickSight), and data management workflows for analytics and BI.</p>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero reveal" id="home">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="pill">
+              <i class="ri-bar-chart-2-line"></i>
+              Data Engineer · Power BI Developer
+            </p>
+
+            <h1 class="hero__title">
+              Turning messy data into
+              <span class="accent">clean pipelines</span> and
+              <span class="accent2">insightful dashboards</span>.
+            </h1>
+
+            <p class="hero__subtitle">
+              3+ years of experience in data engineering, ETL workflows, and BI dashboards with a strong foundation
+              in Data Science, medical informatics, statistical analysis, and cloud data infrastructure.
+            </p>
+
+            <div class="hero__meta">
+              <div class="meta">
+                <i class="ri-map-pin-2-line"></i>
+                <span>Munich, Germany</span>
+              </div>
+
+              <div class="meta">
+                <i class="ri-link"></i>
+                <a href="https://github.com/jaleedaslam" target="_blank" rel="noreferrer">GitHub</a>
+                <span class="dot">•</span>
+                <a href="https://www.linkedin.com/in/jaleed-aslam" target="_blank" rel="noreferrer">LinkedIn</a>
+              </div>
+            </div>
+
+            <div class="hero__cta">
+              <a class="btn btn--primary" href="#projects">
+                <i class="ri-rocket-line"></i> View Projects
+              </a>
+              <a class="btn btn--ghost" href="#contact">
+                <i class="ri-mail-line"></i> Contact
+              </a>
+            </div>
+
+            <div class="hero__stats">
+              <div class="stat">
+                <div class="stat__value">ETL</div>
+                <div class="stat__label">Pipelines & data validation</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">BI</div>
+                <div class="stat__label">Power BI · Superset</div>
+              </div>
+              <div class="stat">
+                <div class="stat__value">Cloud</div>
+                <div class="stat__label">AWS (S3 · EC2 · QuickSight)</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero__card float reveal" aria-label="Focus areas">
+            <h2 class="card__title">Focus Areas</h2>
+            <p class="card__text">
+              Healthcare & research analytics: SQL optimization, ETL workflows, privacy-preserving processing,
+              and decision-ready dashboards for stakeholders.
+            </p>
+
+            <div class="chips">
+              <span class="chip">SQL (PostgreSQL · MySQL)</span>
+              <span class="chip">Power BI (DAX · Power Query)</span>
+              <span class="chip">Apache Superset</span>
+              <span class="chip">Python (EDA)</span>
+              <span class="chip">R (Stats)</span>
+              <span class="chip">AWS (S3 · EC2 · QuickSight)</span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section reveal" id="about">
+        <div class="container">
+          <div class="section__head">
+            <h2>About</h2>
+            <p>Engineering reliable data workflows with decision-ready outputs.</p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-sparkling-2-line"></i> Professional Summary</h3>
+              <p class="panel__text">
+                Data enthusiast with 3+ years of experience transforming complex datasets into actionable insights through
+                data engineering, ETL workflows, and advanced dashboards—supported by strong foundations in Data Science,
+                medical informatics, statistical analysis, and cloud-based infrastructure.
+              </p>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-verified-badge-line"></i> What I deliver</h3>
+              <ul class="list">
+                <li>ETL pipelines across PostgreSQL/MySQL/Trino/APIs/Excel with validation methods.</li>
+                <li>Performance improvements through query optimization & monitoring.</li>
+                <li>Interactive BI dashboards for clinical research & operational reporting.</li>
+                <li>EDA in Python and statistical modelling in R on medical datasets.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section reveal" id="skills">
+        <div class="container">
+          <div class="section__head">
+            <h2>Technical Skills</h2>
+            <p>Tooling across engineering, analytics, visualization, and cloud.</p>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-code-s-slash-line"></i> Programming</h3>
+              <div class="chips">
+                <span class="chip">Python</span>
+                <span class="chip">R</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-database-2-line"></i> Databases & SQL</h3>
+              <div class="chips">
+                <span class="chip">SQL</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">MySQL</span>
+                <span class="chip">DBeaver</span>
+                <span class="chip">pgAdmin</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-line-chart-line"></i> BI & Dashboards</h3>
+              <div class="chips">
+                <span class="chip">Power BI</span>
+                <span class="chip">Superset</span>
+                <span class="chip">Metabase</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-cloud-line"></i> Cloud</h3>
+              <div class="chips">
+                <span class="chip">AWS S3</span>
+                <span class="chip">AWS EC2</span>
+                <span class="chip">AWS QuickSight</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-settings-3-line"></i> ETL & Monitoring</h3>
+              <div class="chips">
+                <span class="chip">ETL Workflows</span>
+                <span class="chip">Grafana</span>
+                <span class="chip">AKHQ (Kafka)</span>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title"><i class="ri-tools-line"></i> Other</h3>
+              <div class="chips">
+                <span class="chip">Docker</span>
+                <span class="chip">CI/CD</span>
+                <span class="chip">Time Series</span>
+                <span class="chip">Machine Learning</span>
+                <span class="chip">Deep Learning</span>
+                <span class="chip">Scrum</span>
+                <span class="chip">Asana</span>
+                <span class="chip">LaTeX</span>
+                <span class="chip">HPC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="section reveal" id="experience">
+        <div class="container">
+          <div class="section__head">
+            <h2>Experience</h2>
+            <p>Data engineering and analytics roles across healthcare and research.</p>
+          </div>
+
+          <div class="timeline">
+            <article class="job">
+              <div class="job__top">
+                <div>
+                  <h3 class="job__title">Data Engineer</h3>
+                  <p class="job__company">LMU-Klinikum · Munich, Germany</p>
+                </div>
+                <p class="job__date">09/2023 – Present</p>
+              </div>
+              <ul class="list">
+                <li>Complex SQL for large datasets (MySQL, PostgreSQL, Trino) and query optimization.</li>
+                <li>ETL implementation, pgAdmin monitoring/maintenance, and troubleshooting data issues.</li>
+                <li>GDPR-compliant processing: pseudonymization (e-PIX, gPAS) and synthetic data (SDV).</li>
+                <li>Power BI models + DAX/Power Query; dashboards on Report Server.</li>
+                <li>Apache Superset dashboards; EDA in Python; statistical analysis in R.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job__top">
+                <div>
+                  <h3 class="job__title">Data Engineer</h3>
+                  <p class="job__company">Cerascreen GmbH · Hamburg, Germany</p>
+                </div>
+                <p class="job__date">09/2022 – 08/2023</p>
+              </div>
+              <ul class="list">
+                <li>Data cleaning & preprocessing with Python (Pandas, NumPy).</li>
+                <li>EDA & visualization for biomarkers using matplotlib/plotly.</li>
+                <li>ML models for predictive analysis; cloud workflows with AWS services.</li>
+                <li>Dashboards in Power BI and AWS QuickSight.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job__top">
+                <div>
+                  <h3 class="job__title">Data Scientist – Master Thesis</h3>
+                  <p class="job__company">Charité – Universitätsmedizin Berlin · Berlin, Germany</p>
+                </div>
+                <p class="job__date">01/2022 – 06/2022</p>
+              </div>
+              <ul class="list">
+                <li>Exploratory & statistical analysis using Python and R on historical control datasets.</li>
+                <li>Power BI dashboards; SQL data quality checks and discrepancy resolution.</li>
+              </ul>
+            </article>
+
+            <article class="job">
+              <div class="job__top">
+                <div>
+                  <h3 class="job__title">Data Science – Research Internship</h3>
+                  <p class="job__company">Berlin Institute of Health · Berlin, Germany</p>
+                </div>
+                <p class="job__date">06/2021 – 09/2021</p>
+              </div>
+              <ul class="list">
+                <li>Data collection/cleaning and EDA using SQL and Python.</li>
+                <li>Fixed & random effects modelling in R for behavioural study analysis.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section class="section reveal" id="education">
+        <div class="container">
+          <div class="section__head">
+            <h2>Education</h2>
+            <p>Bioinformatics and biomedical engineering foundations.</p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="panel">
+              <h3 class="panel__title">Master in Bioinformatics</h3>
+              <p class="panel__subtitle">Freie University Berlin · Germany</p>
+              <p class="panel__meta">09/2019 – 07/2022</p>
+              <p class="panel__text muted">Focus: Data Science & Machine Learning</p>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title">BE in Biomedical Engineering</h3>
+              <p class="panel__subtitle">NED University of Engineering & Technology · Pakistan</p>
+              <p class="panel__meta">01/2010 – 12/2014</p>
+              <p class="panel__text muted">Thesis: Autonomous Navigation of People Bot (AI & Robotics)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section class="section reveal" id="certifications">
+        <div class="container">
+          <div class="section__head">
+            <h2>Certifications</h2>
+            <p>Selected trainings in AI, HPC, and cloud.</p>
+          </div>
+
+          <div class="grid grid--3">
+            <div class="panel">
+              <h3 class="panel__title">AI & HPC (2024–2025)</h3>
+              <ul class="list">
+                <li>Interactive High-Performance Computing with JupyterLab (2025)</li>
+                <li>Hybrid HPC Quantum Computing at LRZ (2024)</li>
+                <li>Introduction to Container Technology (2024)</li>
+                <li>Introduction to Research Data Management (2024)</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title">AI Essentials & LLM</h3>
+              <ul class="list">
+                <li>AI Essentials (2025)</li>
+                <li>Foundations of LLM Mastery (2025)</li>
+                <li>Profiling AI Software Bootcamp (2025)</li>
+                <li>Building & Deploying Large Neural Networks (2025)</li>
+              </ul>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title">Cloud & BI</h3>
+              <ul class="list">
+                <li>AWS Certification (2022)</li>
+                <li>Go.Data: Additional Dashboards in Power BI (2024)</li>
+                <li>Python for Data Science (2025)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section reveal" id="projects">
+        <div class="container">
+          <div class="section__head">
+            <h2>Projects</h2>
+            <p>Selected repositories from GitHub.</p>
+          </div>
+
+          <div class="grid grid--3">
+            <a class="project" href="https://github.com/jaleedaslam/A-classifier-to-diagnosis-patients-at-risk-for-stroke-using-Apache-Spark." target="_blank" rel="noreferrer">
+              <div class="project__icon"><i class="ri-cpu-line"></i></div>
+              <h3 class="project__title">Stroke Risk Classifier (Spark)</h3>
+              <p class="project__text">ML classifier using Apache Spark to detect stroke risk.</p>
+              <span class="project__cta">View repo <i class="ri-arrow-right-line"></i></span>
+            </a>
+
+            <a class="project" href="https://github.com/jaleedaslam/Analyzing-Microbiome-Time-Series-and-Snapshot-Data" target="_blank" rel="noreferrer">
+              <div class="project__icon"><i class="ri-pulse-line"></i></div>
+              <h3 class="project__title">Microbiome Time Series</h3>
+              <p class="project__text">Analysis of microbiome time series and snapshot datasets.</p>
+              <span class="project__cta">View repo <i class="ri-arrow-right-line"></i></span>
+            </a>
+
+            <a class="project" href="https://github.com/jaleedaslam/Google-Cloud-Queries-on-1000-Genomes-Dataset" target="_blank" rel="noreferrer">
+              <div class="project__icon"><i class="ri-cloud-line"></i></div>
+              <h3 class="project__title">1000 Genomes Cloud Queries</h3>
+              <p class="project__text">Google Cloud query workflows on the 1000 Genomes dataset.</p>
+              <span class="project__cta">View repo <i class="ri-arrow-right-line"></i></span>
+            </a>
+          </div>
+
+          <div class="center">
+            <a class="btn btn--ghost" href="https://github.com/jaleedaslam" target="_blank" rel="noreferrer">
+              <i class="ri-github-line"></i> View all on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact (NO PHONE NUMBER) -->
+      <section class="section reveal" id="contact">
+        <div class="container">
+          <div class="section__head">
+            <h2>Contact</h2>
+            <p>Let’s connect.</p>
+          </div>
+
+          <div class="grid grid--2">
+            <div class="panel">
+              <h3 class="panel__title">Get in touch</h3>
+
+              <div class="contact">
+                <div class="contact__row">
+                  <i class="ri-mail-line"></i>
+                  <a href="mailto:jaleedaslam@gmail.com">jaleedaslam@gmail.com</a>
+                </div>
+
+                <div class="contact__row">
+                  <i class="ri-linkedin-box-line"></i>
+                  <a href="https://www.linkedin.com/in/jaleed-aslam" target="_blank" rel="noreferrer">
+                    linkedin.com/in/jaleed-aslam
+                  </a>
+                </div>
+
+                <div class="contact__row">
+                  <i class="ri-github-line"></i>
+                  <a href="https://github.com/jaleedaslam" target="_blank" rel="noreferrer">
+                    github.com/jaleedaslam
+                  </a>
+                </div>
+
+                <div class="contact__row">
+                  <i class="ri-map-pin-2-line"></i>
+                  <span>Munich, Germany</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 class="panel__title">Quick pitch</h3>
+              <p class="panel__text">
+                I build end-to-end data products—from ETL and SQL optimization to BI dashboards—with focus on accuracy,
+                privacy-preserving processing, and clear stakeholder reporting.
+              </p>
+
+              <div class="chips">
+                <span class="chip">ETL</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Power BI</span>
+                <span class="chip">Superset</span>
+                <span class="chip">AWS</span>
+                <span class="chip">Healthcare Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© <span id="year"></span> Jaleed Aslam</span>
+        <span class="footer__sep">•</span>
+        <a href="#" id="backToTop">Back to top</a>
+
       </div>
-      <div class="card">
-        <h3>Master Thesis | Berlin, Germany</h3>
-        <span>Jan 2022 – Jul 2022</span>
-        <p>Analyzed animal behavioral data using ML and statistics to enhance reproducibility in preclinical research.</p>
-      </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="cards" id="projectCards">
-      <!-- Projects dynamically loaded from data.js -->
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <h2>Skills & Tools</h2>
-    <div class="skills-grid" id="skillsGrid">
-      <!-- Skills dynamically loaded as bars -->
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:jaleed@example.com">jaleed@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/zluvsand/">linkedin.com/in/zluvsand</a></p>
-    <p>GitHub: <a href="https://github.com/jaleedaslam">github.com/jaleedaslam</a></p>
-  </section>
-
-  <footer>
-    <p>© 2026 Jaleed Aslam | Built with ❤️ & GitHub Pages</p>
-  </footer>
-
-  <script src="data.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
