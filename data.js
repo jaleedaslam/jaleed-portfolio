@@ -20,19 +20,3 @@ const projects = [
   }
 ];
 
-// Skills with proficiency %
-const skills = [
-  { name: "Python", level: 90 },
-  { name: "R", level: 75 },
-  { name: "SQL", level: 85 },
-  { name: "Pandas", level: 90 },
-  { name: "NumPy", level: 85 },
-  { name: "TensorFlow", level: 70 },
-  { name: "Scikit-Learn", level: 80 },
-  { name: "AWS", level: 80 },
-  { name: "Docker", level: 75 },
-  { name: "Power BI", level: 85 },
-  { name: "Tableau", level: 80 },
-  { name: "Git/GitHub", level: 90 },
-  { name: "Apache Spark", level: 75 }
-];
