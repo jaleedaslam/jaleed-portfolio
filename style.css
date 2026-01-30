@@ -57,7 +57,7 @@ nav button {
   text-align: center;
   padding: 4rem 2rem;
   background: linear-gradient(120deg, #1e90ff, #00bfff);
-  color: white;
+  color: rgb(22, 8, 8);
 }
 
 #hero img {
